@@ -1,0 +1,10 @@
+# All files and directories that need to be ignored by git
+
+/app/node_modules
+/app/build
+/app/.svelte-kit
+/app/.env
+/app/.env.*
+
+/app/vite.config.js.timestamp-*
+/app/vite.config.ts.timestamp-*

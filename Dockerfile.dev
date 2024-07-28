@@ -1,0 +1,17 @@
+FROM node:20-alpine
+
+# Create app directory
+WORKDIR /app
+
+# Copy all the files from the project to the container
+COPY /app .
+
+# Install the dependencies
+RUN npm install
+
+# Expose the port the app runs in
+EXPOSE 5173
+
+# Serve the app
+CMD ["npm", "run", "dev"]
+

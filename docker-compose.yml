@@ -1,0 +1,12 @@
+services:
+  portfolio-app:
+    container_name: portfolio-app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - /app/.svelte-kit
+      - ./app:/app
+    ports:
+      - "5000:5173"
